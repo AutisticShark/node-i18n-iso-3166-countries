@@ -1,6 +1,6 @@
 {
   "name": "i18n-iso-3166-1",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "i18n for ISO 3166-1 country codes and names",
   "typings": "index.d.ts",
   "keywords": [
@@ -92,7 +92,9 @@
     "ur",
     "uz",
     "vi",
-    "zh"
+    "zh",
+    "zh-tw",
+    "zh-cn"
   ],
   "author": {
     "name": "Autistic Shark",
@@ -102,19 +104,19 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AutisticShark/node-i18n-iso-3166-1.git"
+    "url": "https://github.com/AutisticShark/i18n-iso-3166-1.git"
   },
   "dependencies": {
     "diacritics": "1.3.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.30.1",
-    "eslint": "9.30.1",
-    "eslint-config-prettier": "10.1.5",
-    "eslint-plugin-prettier": "5.5.1",
+    "@eslint/js": "^9.35.0",
+    "eslint": "9.35.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.4",
     "globals": "^16.3.0",
-    "mocha": "11.7.1",
+    "mocha": "11.7.2",
     "prettier": "3.6.2"
   },
   "main": "entry-node",
@@ -127,6 +129,6 @@
     "lint": "eslint *.js"
   },
   "bugs": {
-    "url": "https://github.com/AutisticShark/node-i18n-iso-3166-1/issues"
+    "url": "https://github.com/AutisticShark/i18n-iso-3166-1/issues"
   }
 }

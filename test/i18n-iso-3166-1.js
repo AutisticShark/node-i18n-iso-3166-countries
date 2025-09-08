@@ -609,36 +609,72 @@ describe("i18n for ISO 3166-1 country codes and names", function () {
     describe("zh", function () {
       var lang = "zh";
       describe("get Alpha-2 code", function () {
-        it("nameToAlpha2 美国 => US", function () {
-          assert.strictEqual(i18niso.getAlpha2Code("美国", lang), "US");
+        it("nameToAlpha2 美國 => US", function () {
+          assert.strictEqual(i18niso.getAlpha2Code("美國", lang), "US");
         });
-        it("nameToAlpha2 巴西 => BR", function () {
-          assert.strictEqual(i18niso.getAlpha2Code("巴西", lang), "BR");
+        it("nameToAlpha2 日本 => JP", function () {
+          assert.strictEqual(i18niso.getAlpha2Code("日本", lang), "JP");
         });
-        it("nameToAlpha2 台湾 => TW", function () {
-          assert.strictEqual(i18niso.getAlpha2Code("台湾", lang), "TW");
+        it("nameToAlpha2 台灣 => TW", function () {
+          assert.strictEqual(i18niso.getAlpha2Code("台灣", lang), "TW");
         });
       });
       describe("get Alpha-3 code", function () {
-        it("nameToAlpha3 美国 => USA", function () {
-          assert.strictEqual(i18niso.getAlpha3Code("美国", lang), "USA");
+        it("nameToAlpha3 美國 => USA", function () {
+          assert.strictEqual(i18niso.getAlpha3Code("美國", lang), "USA");
         });
-        it("nameToAlpha3 巴西 => BRA", function () {
-          assert.strictEqual(i18niso.getAlpha3Code("巴西", lang), "BRA");
+        it("nameToAlpha3 日本 => JPN", function () {
+          assert.strictEqual(i18niso.getAlpha3Code("日本", lang), "JPN");
         });
-        it("nameToAlpha3 台湾 => TWN", function () {
-          assert.strictEqual(i18niso.getAlpha3Code("台湾", lang), "TWN");
+        it("nameToAlpha3 台灣 => TWN", function () {
+          assert.strictEqual(i18niso.getAlpha3Code("台灣", lang), "TWN");
         });
       });
       describe("get name", function () {
         it("for de", function () {
-          assert.strictEqual(i18niso.getName("de", lang), "德国");
+          assert.strictEqual(i18niso.getName("de", lang), "德國");
         });
         it("for in", function () {
           assert.strictEqual(i18niso.getName("in", lang), "印度");
         });
         it("for tw", function () {
-          assert.strictEqual(i18niso.getName("tw", lang), "台湾");
+          assert.strictEqual(i18niso.getName("tw", lang), "台灣");
+        });
+      });
+    });
+    describe("zh-tw", function () {
+      var lang = "zh-tw";
+      describe("get Alpha-2 code", function () {
+        it("nameToAlpha2 美國 => US", function () {
+          assert.strictEqual(i18niso.getAlpha2Code("美國", lang), "US");
+        });
+        it("nameToAlpha2 日本 => JP", function () {
+          assert.strictEqual(i18niso.getAlpha2Code("日本", lang), "JP");
+        });
+        it("nameToAlpha2 台灣 => TW", function () {
+          assert.strictEqual(i18niso.getAlpha2Code("台灣", lang), "TW");
+        });
+      });
+      describe("get Alpha-3 code", function () {
+        it("nameToAlpha3 美國 => USA", function () {
+          assert.strictEqual(i18niso.getAlpha3Code("美國", lang), "USA");
+        });
+        it("nameToAlpha3 日本 => JPN", function () {
+          assert.strictEqual(i18niso.getAlpha3Code("日本", lang), "JPN");
+        });
+        it("nameToAlpha3 台灣 => TWN", function () {
+          assert.strictEqual(i18niso.getAlpha3Code("台灣", lang), "TWN");
+        });
+      });
+      describe("get name", function () {
+        it("for de", function () {
+          assert.strictEqual(i18niso.getName("de", lang), "德國");
+        });
+        it("for in", function () {
+          assert.strictEqual(i18niso.getName("in", lang), "印度");
+        });
+        it("for tw", function () {
+          assert.strictEqual(i18niso.getName("tw", lang), "台灣");
         });
       });
     });

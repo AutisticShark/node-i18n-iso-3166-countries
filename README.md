@@ -1,6 +1,6 @@
 # i18n-iso-3166-1
 
-i18n for ISO 3166-1 country codes and names. This library supports Alpha-2, Alpha-3, and Numeric codes from ['Wikipedia: Officially assigned code elements'][iso:3166-1].
+i18n for ISO 3166-1 country codes and names. This library supports Alpha-2, Alpha-3, and Numeric codes.
 
 ## Installing
 
@@ -132,6 +132,8 @@ console.log(countries.getNames("en", {select: "official"})); // { 'AF': 'Afghani
 - `ur`: Urdu
 - `uz`: Uzbek
 - `zh`: Chinese
+- `zh-tw`: Traditional Chinese
+- `zh-cn`: Simplified Chinese
 - `vi`: Vietnamese
 
 ### Get all supported languages
