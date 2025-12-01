@@ -117,7 +117,7 @@
     "eslint-plugin-prettier": "5.5.4",
     "globals": "^16.3.0",
     "mocha": "11.7.2",
-    "prettier": "3.6.2"
+    "prettier": "3.7.3"
   },
   "main": "entry-node",
   "browser": "index",
